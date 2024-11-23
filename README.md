@@ -1,10 +1,10 @@
-# ISO BUILDER
+# private-settings-linux-iso
 
 ## How to build
 
 ```bash
-git clone
-cd 
+git clone https://github.com/yasu0796/private-settings-linux-iso.git
+cd private-settings-linux-iso
 ./run.sh
 ```
 
