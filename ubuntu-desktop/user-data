@@ -1,0 +1,30 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        hostname: ubuntu-desktop
+        username: ubuntu
+        # password is username
+        password: "$y$j9T$v1ow2hJbgQjSVKgA5FDtb1$oOE6fhSsINWvDXu8I.QRMt0Esd7h0p.P0nbFf7OnWcA"
+    drivers:
+        install: true
+    packages:
+        - ubuntu-desktop
+        - language-pack-ja
+        - task-japanese-desktop
+        - language-pack-gnome-ja
+        - ibus-mozc
+        - fonts-noto-cjk-extra
+    snaps:
+        - name: firefox
+    keyboard:
+        layout: jp
+    locale: ja_JP.UTF-8
+    refresh-installer:
+        update: true
+    storage:
+        layout:
+            name: direct
+    timezone: "Asia/Tokyo"
+    updates: all
+

@@ -1,0 +1,46 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        hostname: ubuntu-server
+        username: ubuntu
+        # password is username
+        password: "$y$j9T$v1ow2hJbgQjSVKgA5FDtb1$oOE6fhSsINWvDXu8I.QRMt0Esd7h0p.P0nbFf7OnWcA"
+    ssh:
+        install-server: yes
+        authorized-keys:
+            - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINDnj8kdzu+1+q1tMaWYDH14KgcIlMbmkRz/gEJIeyqc yasu-homepc"
+        allow-pw: false
+    packages:
+        - ansible
+        - iftop
+        - iotop
+        - iperf
+        - language-pack-ja
+        - nmap
+        - python3-pip
+        - sshpass
+        - traceroute
+        - whois
+        - yamllint
+        - git
+        - build-essential
+        - cmake
+        - libuv1-dev
+        - libssl-dev
+        - libhwloc-dev
+    keyboard:
+        layout: jp
+    locale: en-US.UTF-8
+    refresh-installer:
+        update: yes
+    storage:
+        layout:
+            name: direct
+    #late-commands:
+        #- "mkdir -p /target/home/test/.ssh/"
+    timezone: "Asia/Tokyo"
+    updates: all
+    user-data:
+        disable_root: false
+
