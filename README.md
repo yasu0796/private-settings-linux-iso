@@ -4,6 +4,14 @@
 
 ## How to build
 
+### Fedora
+
+```bash
+sudo dnf install genisoimage
+```
+
+### Common
+
 ```bash
 git clone https://github.com/yasu0796/private-settings-linux-iso.git
 cd private-settings-linux-iso
