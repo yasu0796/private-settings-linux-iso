@@ -17,7 +17,11 @@ cd ubuntu/desktop-2004
 genisoimage -output ../../out/ubuntu-desktop-2004-seed.iso -volid cidata -joliet -rock user-data meta-data
 cd ../..
 
-
+echo
+echo cloud-init/common
+cd cloud-init/common
+genisoimage -output ../../out/cloudinit-common.iso -volid cidata -joliet -rock user-data meta-data
+cd ..
 
 
 

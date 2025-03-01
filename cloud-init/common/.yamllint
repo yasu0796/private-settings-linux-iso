@@ -1,0 +1,7 @@
+---
+extends: default
+
+rules:
+  comments: disable # cloud-init file need to start #cloud-config
+  document-start: disable # cloud-init file need to start #cloud-config
+  line-length: disable # cloud-init file written SSH key
