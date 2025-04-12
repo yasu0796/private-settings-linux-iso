@@ -1,7 +1,5 @@
 # private-settings-linux-iso
 
-- [Autoinstall configuration reference manual - Ubuntu installation documentation](https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html)
-
 ## How to build
 
 ### Fedora

@@ -1,5 +1,7 @@
 # Ubuntu
 
+- [Autoinstall configuration reference manual - Ubuntu installation documentation](https://canonical-subiquity.readthedocs-hosted.com/en/latest/reference/autoinstall-reference.html)
+
 ## How to use
 
 1. Mount this iso on second Optical media.
